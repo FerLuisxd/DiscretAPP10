@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DiscretAPP7.Views.DisPage"
+             Title="Contenido"
+             BackgroundImage="weeks_background">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout            
+             Orientation="Vertical" >
+
+                <StackLayout
+                Orientation="Horizontal"
+                BackgroundColor="Red">
+                    <Button 
+                FontSize="18"
+                FontAttributes="Bold"
+                Text="Previous" 
+                HorizontalOptions="CenterAndExpand"
+                BackgroundColor="Transparent"  
+                TextColor="Black"
+               FontFamily="{StaticResource BoldFont}"
+                Clicked="GoLink1"/>
+
+                    <Label                
+                Font="18"
+                Margin="0,20"
+                FontAttributes="Italic,Bold"
+                x:Name="Semana" 
+                Text ="Semana" 
+                        FontFamily="{StaticResource BoldFont}"
+                HorizontalOptions="CenterAndExpand"
+                TextColor="White" >
+                    </Label>
+
+                    <Button
+            FontAttributes="Bold"   
+            FontSize="18"
+            HorizontalOptions="CenterAndExpand"
+           BackgroundColor="Transparent"                    
+             TextColor="Black"
+                        FontFamily="{StaticResource BoldFont}"
+            Text="Next" 
+            Clicked="GoLink2">
+                    </Button>
+                </StackLayout>
+                <StackLayout
+                    Orientation="Horizontal">
+
+                    <Label     
+                    Margin="20,0,0,0"
+                    Font="20"
+                    Text="Sección: "
+                    TextColor="Black"
+                        FontFamily="{StaticResource BoldFont}"
+                    FontAttributes="Bold">
+                    </Label>
+
+                    <Label  
+                        Font="20"
+                        FontAttributes="Italic,Bold"                          
+                        Text ="SECCION_AQUI" 
+                        x:Name="notLabel"
+                        FontFamily="{StaticResource BoldFont}"
+                        TextColor="DarkRed" >
+                    </Label>
+                </StackLayout>
+                <StackLayout                    
+                Orientation="Vertical">
+                    <Grid
+                     Margin="15,15,20,0" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height ="*"/>
+                            <RowDefinition Height ="*"/>
+                        </Grid.RowDefinitions>
+                        <Button                        
+                        Font="18"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        BackgroundColor="DarkCyan"  
+                        VerticalOptions="Start"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Text="SESION PRESENCIAL 1"
+                        BorderRadius="23"
+                            FontFamily="{StaticResource BoldFont}"
+                        HeightRequest="46"
+                        Clicked="GoLink2">
+                        </Button>
+                        <Label
+                     Grid.Row="1"   
+                     Grid.Column="0" 
+                     TextColor="Black"
+                    FontFamily="{StaticResource BoldFont}"
+                     Text="Retroalimentación: Autovectores y Autovalores"
+                     Font="18">
+                        </Label>
+                        <Label
+                     Grid.Row="2"   
+                     TextColor="Black"
+                     FontFamily="{StaticResource BoldFont}"
+                     Grid.Column="0" 
+                     Text="Tema: Cadena de Markov"
+                     Font="18">
+                        </Label>
+                        <Label
+                     Grid.Row="3"   
+                     Grid.Column="0" 
+                   
+                     TextColor="Black"
+                     FontFamily="{StaticResource BoldFont}"
+                     Text="Ejercicios en Clase: Cadena de Markov"
+                     Font="18">
+                        </Label>
+                        <Button
+                        Margin="25,15,20,15"
+                        Font="18"
+                        BackgroundColor="DarkCyan" 
+                        VerticalOptions="Start"
+                         TextColor="Black"
+                        Grid.Row="4"                    
+                        FontFamily="{StaticResource BoldFont}"
+                         FontAttributes="Bold"
+                        Grid.Column="0"
+                        Text="SESION PRESENCIAL 2"
+                        BorderRadius="23"
+                        HeightRequest="46"
+                        Clicked="GoLink2">
+                        </Button>
+                        <Label
+                       
+                     Grid.Row="5"   
+                         TextColor="Black"
+                         FontFamily="{StaticResource BoldFont}"
+                     Grid.Column="0" 
+                     Text="Tema: Cadena de Markov"
+                          Font="20">
+                        </Label>
+                        <Label
+                        FontFamily="{StaticResource BoldFont}"
+                     Grid.Row="6"   
+                         TextColor="Black"
+                     Grid.Column="0" 
+                     Text="Ejercicios en Clase: Cadena de Markov"
+                          Font="18">
+                        </Label>
+                        <Label
+                       
+                     Grid.Row="7"   
+                         TextColor="Black"
+                     Grid.Column="0" 
+                     Text="Problemas Resueltos: Cadena de Markov 1 y 2"
+                       FontFamily="{StaticResource BoldFont}"
+                           Font="18">
+                        </Label>
+                        <Button
+                        
+                         Margin="25,15,20,15"
+                         Font="18"
+                       BackgroundColor="DarkCyan" 
+                        BorderRadius="23"
+                        HeightRequest="46"
+                        VerticalOptions="Start"
+                        Grid.Row="8"
+                        Grid.Column="0"
+                        Text="SESION VIRTUAL"
+                        FontFamily="{StaticResource BoldFont}"
+                        TextColor="DarkRed"
+                         FontAttributes="Bold"
+                        Clicked="GoLink2">
+                        </Button>
+                        <Label
+                            FontFamily="{StaticResource BoldFont}"
+                     Grid.Row="9"   
+                     Grid.Column="0" 
+                         TextColor="Black"
+                     Text="Clase Integral - EB"
+                          Font="20">
+                        </Label>
+                        <Label
+                      
+                     Grid.Row="10"   
+                     Grid.Column="0" 
+                        TextColor="DarkRed"
+                        FontAttributes="Bold"
+                     Text="Enlace para subir la Tarea 10"
+                           FontFamily="{StaticResource BoldFont}"
+                          Font="18">
+                        </Label>
+                        <Label
+                     Grid.Row="11"  
+                     Grid.Column="0" 
+                     Text="Evaluacion Virtual 10."
+                     FontFamily="{StaticResource BoldFont}"
+                        TextColor="DarkRed"
+                        FontAttributes="Bold"
+                          Font="20">
+                        </Label>
+                    </Grid>
+                    <StackLayout
+                    Margin="20,0,0,15">
+                        <Label      
+                          
+                     Text="* Inicio: miércoles 20 de junio a las 0 h"
+                     TextColor="Black"
+                       FontFamily="{StaticResource BoldFont}"
+                   Font="18">
+                        </Label>
+                        <Label      
+                           
+                     Text="* Fin: domingo 24 de junio a las 24 h"
+                     FontFamily="{StaticResource BoldFont}"
+                     TextColor="Black"
+                 Font="18">
+                        </Label>
+                    </StackLayout>
+                    <Button
+                        
+                        Margin="15,15,20,20"
+                        Text="Calcular Notas" 
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       Font="20"
+                       BackgroundColor="DarkRed" 
+                        BorderRadius="23"
+                        HeightRequest="46"
+                        FontFamily="{StaticResource BoldFont}"
+                        Clicked="Next">
+
+                    </Button>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
