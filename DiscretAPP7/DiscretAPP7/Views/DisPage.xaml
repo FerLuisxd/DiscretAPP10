@@ -13,6 +13,7 @@
                 Orientation="Horizontal"
                 BackgroundColor="Red">
                     <Button 
+                        x:Name="BSemA"
                 FontSize="18"
                 FontAttributes="Bold"
                 Text="Previous" 
@@ -20,7 +21,7 @@
                 BackgroundColor="Transparent"  
                 TextColor="Black"
                FontFamily="{StaticResource BoldFont}"
-                Clicked="GoLink1"/>
+                Clicked="SemA"/>
 
                     <Label                
                 Font="18"
@@ -34,6 +35,7 @@
                     </Label>
 
                     <Button
+                        x:Name="BSemS"
             FontAttributes="Bold"   
             FontSize="18"
             HorizontalOptions="CenterAndExpand"
@@ -41,7 +43,7 @@
              TextColor="Black"
                         FontFamily="{StaticResource BoldFont}"
             Text="Next" 
-            Clicked="GoLink2">
+            Clicked="SemS">
                     </Button>
                 </StackLayout>
                 <StackLayout
@@ -73,7 +75,8 @@
                             <RowDefinition Height ="*"/>
                             <RowDefinition Height ="*"/>
                         </Grid.RowDefinitions>
-                        <Button                        
+                        <Button  
+                         x:Name="S2"
                         Font="18"
                         Grid.Row="0"
                         Grid.Column="0"
@@ -85,7 +88,7 @@
                         BorderRadius="23"
                             FontFamily="{StaticResource BoldFont}"
                         HeightRequest="46"
-                        Clicked="GoLink2">
+                        Clicked="GoLink1">
                         </Button>
                         <Label
                      Grid.Row="1"   
@@ -167,7 +170,7 @@
                         FontFamily="{StaticResource BoldFont}"
                         TextColor="DarkRed"
                          FontAttributes="Bold"
-                        Clicked="GoLink2">
+                        Clicked="GoLink3">
                         </Button>
                         <Label
                             FontFamily="{StaticResource BoldFont}"
