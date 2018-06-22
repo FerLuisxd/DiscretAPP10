@@ -5,8 +5,14 @@
 	<Application.Resources>
         <ResourceDictionary>
             <OnPlatform x:TypeArguments="x:String" x:Key="BoldFont">
-                <On Platform="Android" Value="agency-fb.ttf#Open Sans" />
-                <On Platform="iOS" Value="OpenSans-Bold" />
+                <On Platform="Android" Value="agency_fb_bold.ttf#AgencyFB_Bold" />
+                <On Platform="iOS" Value="agency_fb_bold" />
+                <On Platform="WinPhone" Value="agency_fb_bold" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="NormalFont">
+                <On Platform="Android" Value="agency_fb.ttf#AgencyFB" />
+                <On Platform="iOS" Value="agency_fb" />
+                <On Platform="WinPhone" Value="agency_fb" />
             </OnPlatform>
         </ResourceDictionary>
     </Application.Resources>

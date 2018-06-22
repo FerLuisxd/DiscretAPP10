@@ -17,7 +17,7 @@ namespace DiscretAPP7
 
 
               var nav = new NavigationPage(new LoginPage());
-            nav.BarBackgroundColor = Color.Red;
+            nav.BarBackgroundColor = Color.Brown;
             MainPage = nav;
         }
 
